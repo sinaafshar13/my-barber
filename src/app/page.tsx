@@ -1,5 +1,3 @@
-export default function Home() :Element{
-  return (
-    <h1>hello , friend!</h1>
-  );
+export default function Home(): JSX.Element {
+  return <h1>سلام ، رفیق!</h1>;
 }
