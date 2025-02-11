@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Vazirmatn} from "next/font/google"
- 
+import { Vazirmatn } from "next/font/google";
+
 import "./globals.css";
+import React from "react";
 
 const vazirmatn = Vazirmatn({
-  subsets: ["latin","arabic"],
+  subsets: ["latin", "arabic"],
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title: "My Barber",
@@ -18,7 +19,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) : JSX.Element{
+}>) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>{children}</body>
